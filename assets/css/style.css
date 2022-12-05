@@ -16,25 +16,23 @@ body {
 
 #header h1 {
     padding: 30px;
-    width: 25%;
+    width: 50%;
     display: flex;
     align-items: center;
 }
 
 #navbar {
     display: flex;
-    width: 75%;
+    width: 40%;
     margin-left: 20px;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
 }
-#navbar a {
-    padding: 20px
-}
-
 a {
     text-decoration: none;
     color: black;
+    border-bottom: 3px solid navy;
+    padding: 5px;
 }
 
 
@@ -56,14 +54,18 @@ a {
 #subtitle {
     background-color: rgba(255,255,255,0.8);
     position: relative;
-    left: 800px;
+    margin-left: 900px;
     top: 150px;
     padding: 25px;
-    max-width: 550px;
-    z-index: 100;
+    display: flex;
+    justify-items: end;
+    justify-content: end;
+    
 }
 #subtitle h2 {
-    padding-left: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 
@@ -107,6 +109,7 @@ a {
 }
 #contentwork {
     grid-area: cwork;
+    height: 800px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 50% 50%;
@@ -124,24 +127,29 @@ a {
     flex-direction:row;
     align-items: center;
     justify-content: space-around;
-    text-decoration: underline solid;
 
 
 }
 #project1 {
     grid-area: p1 ;
+    background-image: url("../images/pexels-flo-dahm-699459.jpg");
 }
 #project2 {
     grid-area: p2;
+    background-image: url("../images/pexels-nao-triponez-129208.jpg");
 }
 #project3 {
     grid-area: p3;
+    background-image: url("../images/pexels-negative-space-97077.jpg");
 }
 #project4 {
     grid-area: p4;
+    background-image: url("../images/pexels-pixabay-267394.jpg");
+
 }
 #project5 {
     grid-area: p5;
+    background-image: url("../images/pexels-thisisengineering-3913025.jpg");
 }
 
 .mainheading {
@@ -150,6 +158,30 @@ a {
     align-items: flex-start;
     padding-right: 20px;
     border-right: 5px solid navy;
-    margin: 10px;
-  
+   
+}
+.pagesection {
+    margin: 15px ;
+}
+.content {
+    padding-left: 20px;
+}
+.projects {
+    border: 2px solid blue;
+    margin: 5px;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    
+}
+.projectheading {
+    background-color:  rgba(255,255,255,0.8);
+    padding: 15px;
+    height: 25px;
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
 }
