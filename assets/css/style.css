@@ -36,38 +36,33 @@ a {
 }
 
 
-#hero-banner {
+/*#hero-banner {
     display: grid;
-    min-height: 300px;
-    height: 70vh;
+    height: 100vh;
+    width: 100%;
     grid-template-rows: 100%;
     grid-template-areas:
     "bannerPhoto"
     
-}
-#bannerPhoto {
-    grid-area: bannerPhoto;
+}*/
+#hero-banner {
     background-image: url("../images/sb-blog-programming.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
 }
 #subtitle {
     background-color: rgba(255,255,255,0.8);
-    position: relative;
-    margin-left: 900px;
-    top: 150px;
-    padding: 25px;
-    display: flex;
-    justify-items: end;
-    justify-content: end;
-    
-}
-#subtitle h2 {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
+    right: 0px;
+    position: absolute;
+    top: 200px;
+    padding: 10px;
+    width: 350px;
+    text-align: end;
 
+}
 
 #maingrid {
     display: grid;
@@ -109,7 +104,7 @@ a {
 }
 #contentwork {
     grid-area: cwork;
-    height: 800px;
+    min-height: 800px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 50% 50%;
@@ -167,7 +162,7 @@ a {
     padding-left: 20px;
 }
 .projects {
-    border: 2px solid blue;
+    border: 2px solid turquoise;
     margin: 5px;
     display: flex;
     align-items: flex-end;
@@ -176,12 +171,42 @@ a {
     
 }
 .projectheading {
-    background-color:  rgba(255,255,255,0.8);
+    background-color:rgb(64, 224, 208, 0.8);
     padding: 15px;
+    margin-bottom: 15px;
     height: 25px;
-    width: 100%;
     color: black;
     font-size: 18px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+}
+@media only screen and (max-width: 1000px) {
+   .head {
+    position: static;
+   } 
+   #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+   }
+   #contactlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+   }
+   #contentwork {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "p1"
+    "p2"
+    "p3"
+    "p4"
+    "p5";
+   }
+   #herobanner {
+
+   }
 }
