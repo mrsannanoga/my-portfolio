@@ -210,6 +210,7 @@ body {
         flex-direction: column;
         align-items: flex-end;
         text-align: end;
+        padding-right: 10px;
     }
 
     #contactlinks {
@@ -235,5 +236,8 @@ body {
     }
     #hero-banner {
         max-height: 40vh;
+    }
+    #subtitle {
+        width: 300px;
     }
 }
