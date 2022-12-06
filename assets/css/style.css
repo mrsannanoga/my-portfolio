@@ -28,23 +28,13 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-a {
+.linkdecor a {
     text-decoration: none;
     color: black;
     border-bottom: 3px solid navy;
     padding: 5px;
 }
 
-
-/*#hero-banner {
-    display: grid;
-    height: 100vh;
-    width: 100%;
-    grid-template-rows: 100%;
-    grid-template-areas:
-    "bannerPhoto"
-    
-}*/
 #hero-banner {
     background-image: url("../images/sb-blog-programming.png");
     background-repeat: no-repeat;
@@ -128,6 +118,9 @@ a {
 #project1 {
     grid-area: p1 ;
     background-image: url("../images/pexels-flo-dahm-699459.jpg");
+    
+
+
 }
 #project2 {
     grid-area: p2;
@@ -168,12 +161,13 @@ a {
     align-items: flex-end;
     background-position: center;
     background-size: cover;
+    text-decoration: none;
     
 }
 .projectheading {
     background-color:rgb(64, 224, 208, 0.8);
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     height: 25px;
     color: black;
     font-size: 18px;
